@@ -59,5 +59,6 @@
       "label": "Application",
       "onAutoForward": "openBrowser"
     }
-  }
+  },
+  "postStartCommand": "bundle install"
 }
