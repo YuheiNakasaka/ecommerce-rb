@@ -21,6 +21,9 @@ Metrics/AbcSize:
   Exclude:
     - "db/**/*"
 
+Rails/I18nLocaleTexts:
+  Enabled: false
+
 require:
   - rubocop-ast
   - rubocop-rails
