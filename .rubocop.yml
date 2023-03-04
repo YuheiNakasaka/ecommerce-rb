@@ -13,6 +13,14 @@ AllCops:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Metrics/MethodLength:
+  Exclude:
+    - "db/**/*"
+
+Metrics/AbcSize:
+  Exclude:
+    - "db/**/*"
+
 require:
   - rubocop-ast
   - rubocop-rails
