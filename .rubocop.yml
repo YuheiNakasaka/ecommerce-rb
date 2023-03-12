@@ -14,14 +14,17 @@ Style/ClassAndModuleChildren:
   Enabled: false
 
 Metrics/MethodLength:
-  Exclude:
-    - "db/**/*"
+  Max: 40
 
 Metrics/AbcSize:
   Exclude:
     - "db/**/*"
+    - "app/controllers/customer/webhooks_controller.rb"
 
 Rails/I18nLocaleTexts:
+  Enabled: false
+
+Lint/DuplicateBranch:
   Enabled: false
 
 require:
