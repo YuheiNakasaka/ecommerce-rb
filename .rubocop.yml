@@ -21,6 +21,9 @@ Metrics/AbcSize:
     - "db/**/*"
     - "app/controllers/customer/webhooks_controller.rb"
 
+Metrics/BlockLength:
+  Enabled: false
+
 Rails/I18nLocaleTexts:
   Enabled: false
 

@@ -3,5 +3,5 @@
 class ApplicationRecord < ActiveRecord::Base
   primary_abstract_class
 
-  scope :latest, -> { oder(created_at: :desc) }
+  scope :latest, -> { order(created_at: :desc) }
 end
