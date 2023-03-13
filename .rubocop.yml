@@ -30,6 +30,9 @@ Rails/I18nLocaleTexts:
 Lint/DuplicateBranch:
   Enabled: false
 
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+
 require:
   - rubocop-ast
   - rubocop-rails

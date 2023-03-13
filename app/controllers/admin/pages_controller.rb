@@ -14,7 +14,7 @@ class Admin::PagesController < ApplicationController
 
   def get_orders(params)
     if params[:status].blank? || Order.statuses.keys.to_a.exclude?(params[:status])
-      return [Order.eger_load(:customer).latest,
+      return [Order.eager_load(:customer).latest,
               'all']
     end
 

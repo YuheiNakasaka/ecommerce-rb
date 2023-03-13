@@ -32,5 +32,12 @@ Rails.application.routes.draw do
         get 'success'
       end
     end
+
+    resources :customers do
+      collection do
+        get 'confirm_withdraw'
+        patch 'withdraw'
+      end
+    end
   end
 end
