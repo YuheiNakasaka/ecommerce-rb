@@ -52,9 +52,9 @@ services:
     <<: *backend
     command: /bin/bash
 
-  # sidekiq:
-  #   <<: *backend
-  #   command: bundle exec sidekiq -C config/sidekiq.yml
+  sidekiq:
+    <<: *backend
+    command: bundle exec sidekiq -C config/sidekiq.yml
 
   postgres:
     image: postgres:13.0
@@ -73,7 +73,7 @@ services:
       interval: 5s
 
   redis:
-    image: redis:3.2-alpine
+    image: redis:7.0.9-alpine
     volumes:
       - redis:/data
     ports:
